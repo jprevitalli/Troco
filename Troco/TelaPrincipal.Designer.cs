@@ -45,7 +45,7 @@ namespace Troco
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label100 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
+            this.label050 = new System.Windows.Forms.Label();
             this.label025 = new System.Windows.Forms.Label();
             this.label010 = new System.Windows.Forms.Label();
             this.label005 = new System.Windows.Forms.Label();
@@ -143,6 +143,7 @@ namespace Troco
             this.btnCalcular.TabIndex = 8;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = false;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // label5
             // 
@@ -206,13 +207,13 @@ namespace Troco
             this.label100.Size = new System.Drawing.Size(54, 17);
             this.label100.TabIndex = 15;
             // 
-            // label50
+            // label050
             // 
-            this.label50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label50.Location = new System.Drawing.Point(623, 203);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(54, 17);
-            this.label50.TabIndex = 16;
+            this.label050.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label050.Location = new System.Drawing.Point(623, 203);
+            this.label050.Name = "label050";
+            this.label050.Size = new System.Drawing.Size(54, 17);
+            this.label050.TabIndex = 16;
             // 
             // label025
             // 
@@ -255,7 +256,7 @@ namespace Troco
             this.Controls.Add(this.label005);
             this.Controls.Add(this.label010);
             this.Controls.Add(this.label025);
-            this.Controls.Add(this.label50);
+            this.Controls.Add(this.label050);
             this.Controls.Add(this.label100);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -273,9 +274,11 @@ namespace Troco
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "TelaPrincipal";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Caixa :: Troco";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -300,7 +303,7 @@ namespace Troco
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label100;
-        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label050;
         private System.Windows.Forms.Label label025;
         private System.Windows.Forms.Label label010;
         private System.Windows.Forms.Label label005;
